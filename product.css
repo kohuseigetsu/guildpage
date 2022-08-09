@@ -1,0 +1,153 @@
+.container {
+	max-width: 960px;
+}
+
+/*
+   * Custom translucent site header
+   */
+
+.site-header {
+	background-color: rgba(0, 0, 0, .85);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+	color: #8e8e8e;
+	transition: color .15s ease-in-out;
+	height: 50px;
+}
+
+.site-header a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+
+.product-device {
+	position: absolute;
+	right: 10%;
+	bottom: -30%;
+	width: 300px;
+	height: 540px;
+	background-color: #333;
+	border-radius: 21px;
+	transform: rotate(30deg);
+}
+
+.product-device::before {
+	position: absolute;
+	top: 10%;
+	right: 10px;
+	bottom: 10%;
+	left: 10px;
+	content: "";
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 5px;
+}
+
+.product-device-2 {
+	top: -25%;
+	right: auto;
+	bottom: 0;
+	left: 5%;
+	background-color: #e5e5e5;
+}
+
+
+/*
+   * Extra utilities
+   */
+
+.flex-equal>* {
+	flex: 1;
+}
+
+@media (min-width: 768px) {
+	.flex-md-equal>* {
+		flex: 1;
+	}
+}
+
+.img-fluid {
+	height: 100%;
+	width: 100%;
+}
+
+.sns-logo {
+	height: 30px;
+	width: 30px;
+	margin: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: "メイリオ";
+}
+
+.kakomi-kage2 {
+	color: #fcf8f8;
+	/* 文字色 */
+	background-color: #333d3f;
+	/* 背景色 */
+	box-shadow: 0 0 2px 2px #333d3f;
+	/* 影 */
+}
+
+.profile {
+	height: 90%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.portfolio {
+	height: 90%;
+	width: 100%;
+	object-fit: contain;
+}
+
+/* animation */
+.poyon.is-animated1 {
+	animation: poyon 1s ease-in-out 1 forwards;
+}
+
+.poyon.is-animated2 {
+	animation: poyon 1s ease-in-out 1 forwards;
+}
+
+@keyframes poyon {
+	0% {
+		transform: scale(1.0, 1.0) translate(0, 0);
+	}
+
+	15% {
+		transform: scale(0.98, 0.9) translate(0, 5px);
+	}
+
+	30% {
+		transform: scale(1.02, 1.0) translate(0, 8px);
+	}
+
+	50% {
+		transform: scale(0.98, 1.05) translate(0, -8px);
+	}
+
+	70% {
+		transform: scale(1.0, 0.9) translate(0, 5px);
+	}
+
+	100% {
+		transform: scale(1.0, 1.0) translate(0, 0);
+	}
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+}
